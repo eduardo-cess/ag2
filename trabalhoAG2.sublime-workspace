@@ -1,0 +1,822 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"expe",
+				"experimentos〔variable〕"
+			],
+			[
+				"ex",
+				"experimentos"
+			],
+			[
+				"pior",
+				"pior_da_geracao〔variable〕"
+			],
+			[
+				"apt",
+				"aptidao_individuo〔variable〕"
+			],
+			[
+				"r",
+				"range"
+			],
+			[
+				"qtd",
+				"qtd_elitismo〔variable〕"
+			],
+			[
+				"for",
+				"for〔keyword〕"
+			],
+			[
+				"qt",
+				"qtd_pop"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"ag",
+				"ag_class"
+			],
+			[
+				"q",
+				"querySelector(selectors)	Element"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"modu",
+				"module.exports"
+			],
+			[
+				"ar",
+				"array_experimento"
+			],
+			[
+				"in",
+				"info_to_insert"
+			],
+			[
+				"arr",
+				"array_experimento〔variable〕"
+			],
+			[
+				"A",
+				"Array                         (fn)   [E]"
+			],
+			[
+				"console",
+				"console.log()"
+			],
+			[
+				"melhores",
+				"melhores_individuos"
+			],
+			[
+				"me",
+				"melhores_individuos"
+			],
+			[
+				"med",
+				"media"
+			],
+			[
+				"melh",
+				"melhor_da_geracao〔variable〕"
+			],
+			[
+				"ap",
+				"aptidao_individuo"
+			],
+			[
+				"melhor",
+				"melhor_da_geracao"
+			],
+			[
+				"sele",
+				"select_mais_apto_geracao〔function〕"
+			],
+			[
+				"pop",
+				"pop_inicial"
+			],
+			[
+				"indi",
+				"individuos〔variable〕"
+			],
+			[
+				"ind",
+				"individuos〔variable〕"
+			],
+			[
+				"po",
+				"populacao_inicial"
+			],
+			[
+				"get",
+				"get_experimento_from_mongo"
+			],
+			[
+				"medi",
+				"media_geral_ind"
+			],
+			[
+				"e",
+				"experimento_collection"
+			],
+			[
+				"qtd_",
+				"qtd_pop〔variable〕"
+			],
+			[
+				"cont",
+				"cont_geracao〔variable〕"
+			],
+			[
+				"filho",
+				"filhos〔variable〕"
+			],
+			[
+				"random",
+				"randomInt"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"conso",
+				"console.log('experimento"
+			],
+			[
+				"conn",
+				"connection   (obj) [E]"
+			],
+			[
+				"aptidao_",
+				"aptidao_pop_total_experimento"
+			],
+			[
+				"a",
+				"avaliar"
+			],
+			[
+				"w",
+				"wt(\"x"
+			],
+			[
+				"fil",
+				"filhos〔variable〕"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"p",
+				"push〔function〕"
+			],
+			[
+				"bin",
+				"bin2Float〔class〕"
+			],
+			[
+				"fo",
+				"for"
+			],
+			[
+				"parse",
+				"parseInt〔function〕"
+			],
+			[
+				"bi",
+				"binary"
+			],
+			[
+				"f",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"_",
+				"$_GET〔variable〕"
+			],
+			[
+				"i",
+				"input	Tag"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"pun",
+				"puntuados〔variable〕"
+			],
+			[
+				"ma",
+				"margin-bottom: 〔property〕"
+			],
+			[
+				"j",
+				"justify〔value〕"
+			],
+			[
+				"tex",
+				"text-align: 〔property〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ag_class.js",
+			"settings":
+			{
+				"buffer_size": 5754,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "arquivos/experimentos-elitismo.json",
+			"settings":
+			{
+				"buffer_size": 11931,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "console.time(\"time\");\n\nvar fs = require('fs');\nvar u = require('underscore');\nvar ag = require('./ag_class.js');\n\n//ag.array_populacao_experimento = [10];\n\nfor(aux1 in ag.array_populacao_experimento){\n	for(aux2 in u.range(3)){\n		ag.qtd_pop = ag.array_populacao_experimento[aux1];\n		ag.play_ag(3);\n		ag.experimento++;\n		ag.zerar_variaveis();\n	}\n}\n\nvar file = '/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/arquivos/experimentos-norm-linear.json';\nvar data = JSON.stringify(ag.array_experimento);\nfs.writeFile(file, data, function(err) {\n    if(err) {\n        return console.log(err);\n    }\n\n    console.log(\"Arquivo salvo em \"+file);\n}); \n\nconsole.timeEnd(\"time\");\n\n\n",
+			"file": "ag-norm-linear.js",
+			"file_size": 677,
+			"file_write_time": 131143926336297589,
+			"settings":
+			{
+				"buffer_size": 676,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ag.js",
+			"settings":
+			{
+				"buffer_size": 861,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "console.time(\"time\");\n\nvar fs = require('fs');\nvar u = require('underscore');\nvar MongoClient = require('mongodb').MongoClient, assert = require('assert');\nvar ag = require('./ag_class.js');\n\nag.array_populacao_experimento = [300,300,300,300,300,300,300,300,300,300];\n\nfor(aux1 in ag.array_populacao_experimento){\n	for(aux2 in u.range(3)){\n		ag.qtd_pop = ag.array_populacao_experimento[aux1];\n		ag.play_ag(2);\n		ag.experimento++;\n		ag.zerar_variaveis();\n	}\n}\n\nvar file = '/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/arquivos/experimentos-elitismo.json';\nvar data = ag.array_experimento;\n//var experimentos = '{\"experimentos\": '+data+'}';\n\nMongoClient.connect(\"mongodb://localhost:27017/ag3\", function(err, db) {\n	assert.equal(null, err);\n	experimento_collection = db.collection('experimentos_elitismo');\n	for(i in data){\n		experimento_collection.insertOne(\n			data[i],\n\n			{w:1},function(err, r) {\n			\n\n			assert.equal(null, err);\n			assert.equal(1, r.insertedCount);\n		});\n	}\n	db.close();\n});\n\nconsole.timeEnd(\"time\");\n",
+			"file": "ag-elitismo.js",
+			"file_size": 1204,
+			"file_write_time": 131144002904697407,
+			"settings":
+			{
+				"buffer_size": 1032,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/cess/Documentos/Semestre/Computação_Evolutiva/ag/ag-completo-mongodb.js",
+			"settings":
+			{
+				"buffer_size": 4879,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "p",
+		"selected_items":
+		[
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"npm i",
+				"npm: Install Saved Packages"
+			],
+			[
+				"npm sa",
+				"npm: Install and Save Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Add All"
+			],
+			[
+				"git p",
+				"Git: Push Current Branch"
+			],
+			[
+				"git",
+				"Git: Add All"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2"
+	],
+	"file_history":
+	[
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/package.json",
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/arquivos/experimentos-elitismo.json",
+		"/home/cess/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/cess/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/arquivos/experimentos.json",
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/ag-elitismo.js",
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/ag.js",
+		"/home/cess/Documentos/Semestre/Computação_Evolutiva/ag2/ag-completo.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag2/ag-completo.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/ag-completo-mongodb.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag2/ag-completo-mongodb.js",
+		"/home/cess/Documentos/meteor/ltjquery/client/layout.html",
+		"/home/cess/Documentos/nodejs/nodematerialize/views/index.jade",
+		"/home/cess/Documentos/nodejs/nodematerialize/views/layout.jade",
+		"/home/cess/Documentos/nodejs/nodematerialize/routes/index.js",
+		"/home/cess/Documentos/nodejs/nodematerialize/app.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/ag-compact.js",
+		"/home/cess/Documentos/nodejs/nodematerialize/public/stylesheets/style.css",
+		"/home/cess/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/cess/Documentos/nodejs/nodematerialize/package.json",
+		"/home/cess/Documentos/nodejs/express2/views/index.jade",
+		"/home/cess/Documentos/nodejs/express2/views/layout.jade",
+		"/home/cess/Documentos/nodejs/express2/app.js",
+		"/home/cess/Documentos/nodejs/express2/routes/index.js",
+		"/home/cess/Documentos/nodejs/express2/views/helloworld.jade",
+		"/home/cess/Documentos/nodejs/express2/bin/www",
+		"/home/cess/Documentos/nodejs/express1/index.js",
+		"/home/cess/Documentos/nodejs/express2/package.json",
+		"/home/cess/.config/sublime-text-3/Packages/Color Scheme - Default/Blackboard.tmTheme",
+		"/home/cess/.config/sublime-text-3/Packages/Tron Color Scheme/TronLegacy.tmTheme",
+		"/home/cess/.cache/.fr-NapvAF/ColorSchemeEditor-ST2.py",
+		"/home/cess/Documentos/nodejs/express1/index.html",
+		"/home/cess/Documentos/meteor/hackathon/view/templates/template2.html",
+		"/home/cess/Documentos/meteor/hackathon/view/templates/layout/menuOptions.html",
+		"/home/cess/Documentos/meteor/hackathon/lib/routes.js",
+		"/home/cess/Documentos/meteor/hackathon/view/templates/index.html",
+		"/home/cess/Documentos/meteor/hackathon/lib/scripts.html",
+		"/home/cess/Documentos/meteor/hackathon/view/templates/conveniosFromMongo.html",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/ag-completo-mysql.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/plot-from-mongo-melhores_por_geracao.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/plot-from-mongo.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/plot-from-mongo.py",
+		"/home/cess/Documentos/nodejs/myapp/routes/index.js",
+		"/home/cess/Documentos/nodejs/myapp/app.js",
+		"/home/cess/Documentos/nodejs/HTML5Application/public_html/arquivo.js",
+		"/home/cess/Documentos/nodejs/HTML5Application/public_html/nodejs.js",
+		"/home/cess/Documentos/nodejs/HTML5Application/public_html/index.html",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/package.json",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/node_modules/mongodb/package.json",
+		"/home/cess/Desktop/Documentos/Semestre/Computação Evolutiva/ag/ag-completo.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/ag/index.js",
+		"/home/cess/Desktop/Documentos/Semestre/Computação Evolutiva/ag/package.json",
+		"/home/cess/Documentos/meteor/hackathon/controller/main.js",
+		"/home/cess/.config/sublime-text-3/Packages/User/nodeBuild.sublime-build",
+		"/home/cess/Documentos/nodejs/buypoint/teste",
+		"/home/cess/Documentos/nodejs/espress-teste/index.js",
+		"/srv/http/nomes/index.php",
+		"/srv/http/nomes.php",
+		"/home/cess/Documentos/nodejs/espress-teste/package.json",
+		"/home/cess/Documentos/nodejs/myapp/package.json",
+		"/home/cess/Documentos/nodejs/myapp/routes/users.js",
+		"/home/cess/Documentos/Semestre/Computação Evolutiva/teste.py",
+		"/home/cess/Documentos/meteor/virtualShopping/client/main.js",
+		"/home/cess/Documentos/meteor/virtualShopping/client/main.html",
+		"/home/cess/Documentos/meteor/virtualShopping/client/controller/routes.js",
+		"/home/cess/Documentos/meteor/virtualShopping/client/main.jade",
+		"/home/cess/Downloads/sistemacongresso.sql",
+		"/home/cess/Documentos/python/scriptHackathon/apiToDB.py",
+		"/srv/http/para_raio/config/Config.php",
+		"/home/cess/Documentos/meteor/angular/client/main.js",
+		"/home/cess/Documentos/meteor/angular/client/main.html",
+		"/home/cess/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/cess/Documentos/meteor/ltjquery/client/angular-meteor.sublime-project",
+		"/home/cess/Desktop/initializr/index.html",
+		"/sbin/netbeans",
+		"/home/cess/Documentos/meteor/angular/client/layout.html",
+		"/home/cess/Documentos/meteor/angular/client/routes.js"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pior",
+			"goto",
+			"go to",
+			"definition",
+			",",
+			", ",
+			"function ",
+			"var ",
+			"500",
+			"300",
+			"100",
+			"gr",
+			"router.get('/', function(req, res, next) {\n  res.render('index', { title: 'Express' });\n});\n",
+			"result",
+			"media_array",
+			"wt",
+			"random",
+			"wt",
+			"01010101010010110101010100000110001101101110010011000010",
+			"population",
+			"individual",
+			"Crea",
+			"mutation_chance",
+			"num",
+			"largo",
+			"ctrl+spa",
+			"<template name=\"ex1\">\n\n</template>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ag_class.prototype.",
+			"ag_class.prototype",
+			"1000",
+			"200",
+			"experimentos",
+			"console.log",
+			"populacao",
+			"individuo",
+			"cria",
+			"tMutacao",
+			"qtdIndividuosPop",
+			"tamanho"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ag_class.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2120,
+								2120
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "arquivos/experimentos-elitismo.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7977,
+								7977
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ag-norm-linear.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ag.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ag-elitismo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/cess/Documentos/Semestre/Computação_Evolutiva/ag/ag-completo-mongodb.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4863,
+								4863
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2580.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 152.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/User/nodeBuild.sublime-build",
+	"project": "trabalhoAG2.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 172.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
